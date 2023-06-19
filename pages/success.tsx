@@ -1,7 +1,12 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
+import toast from "react-hot-toast";
 
 let Success = () => {
+	useEffect(() => {
+		toast.success("Purchase successfull!");
+	}, []);
+
 	return (
 		<>
 			<main className="h-[70vh] flex flex-col gap-8 justify-center items-center">
